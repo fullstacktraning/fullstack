@@ -1,0 +1,9 @@
+fieldset{
+    width: 50%;
+    margin: 200px auto;
+    color: white;
+    background: linear-gradient(180deg,red,black);
+}
+legend{
+    background: linear-gradient(180deg,red,black);
+}
