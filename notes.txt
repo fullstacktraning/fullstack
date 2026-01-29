@@ -1,0 +1,163 @@
+HTML
+****
+    Hyper Text Markup Language
+    static web pages
+    HTML5.X
+
+    tag based markup Language
+    <p></p>
+    <table></table>
+    <form></form>
+    <br>
+    <hr>
+    <h1></h1>
+    <title></title>
+    <img>
+    <a></a>
+    ---
+    ---
+    ---
+
+    1) paired / container
+    2) non paired / non container
+
+    combination of opening tag, content and closing tag called as HTML Element
+    Attributes enhances HTML Element functionality
+    Attributes are key & value pairs
+    key & value separated by using "="
+    "key & value" pairs are separated by using space
+
+    HTML file extension must be .html/.htm
+    we will execute HTML,CSS and JavaScript with the help of Browsers
+
+    CSS Stands for Cascading Style Sheet
+    CSS used to apply styles
+    Ex.
+        color
+        background-color
+        margin
+        padding
+        font-size
+        font-family
+        ---
+        ---
+        ---
+    Latest version is CSS 3.x
+    CSS files extension must be ".css"
+
+    JavaScript is Scripting Language
+    JavaScript used to develop "dynamic web pages"
+    JavaScript also used to implement forms validations
+    Latest version is ES13
+    JavaScript files extension must be ".js"
+
+Web page Structure
+******************
+
+DOCTYPE
+ROOT SECTION
+    HEAD SECTION
+        METADATA
+
+    BODY SECTION
+        MAIN CONTENT
+
+DOCTYPE representing HTML Version
+
+below DOCTYPE representing HTML5.x
+<!DOCTYPE html>
+
+<html></html> tag is used to create ROOT SECTION
+<head></head> tag is used to create HEAD SECTION
+<body></body> tag is used to create BODY SECTION
+
+data about webpage called as METADATA
+Ex.
+    vendor
+    version
+    description
+    title
+    ---
+    ---
+    ---
+<meta> tag, used to define METADATA
+
+Headings
+********
+<h1></h1>   main heading. (large)
+<h2></h2>   sub heading
+<h3></h3>   ""
+<h4></h4>   ""
+<h5></h5>   ""
+<h6></h6>   ""  (small)
+
+paragraphs
+**********
+    <p></p> tag used to display paragraphs
+    <p></p> is block level element
+
+divisions
+*********
+    <div></div> tag used to create divisons in webpages
+    <div></div> tag also block level element
+
+
+images
+******
+    <img width="" height="" src="" alt=""> tag used to display images, non paired, inline element
+
+
+
+
+inline > id selector > class selector > element selector > universal selector
+ style       #             dot            tag                    ( * )
+
+
+anchor element
+**************
+    <a href="" target="_blank"></a>
+
+font awesome
+************
+    font awesome is the "css library"
+    font awesome library used to display the "symbols"
+    Ex.
+        ruppee
+        dollar
+        facebook
+        whatsapp
+        twitter
+        ---
+        ---
+        ---
+    font awesome CDN, we will include in "head section" of webpage
+    CDN Stands for content delivert network
+
+    <i class="fa fa-inr"></i>.  ruppee
+    <i class="fa fa-trash"></i>. recycle bin
+    <i class="fa fa-dollar"></i> dollar 
+    <i class="fa fa-whatsapp"></i> whatsapp 
+    ---
+    ---
+    ---
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+Tables
+******
+    rows & columns --- table
+
+    <table></table>
+
+    <tr></tr>
+
+    <th></th>
+
+    <td></td>
+
+    border
+    align
+    cellpadding
+    cellspacing
+    colspan
+    rowspan
+
