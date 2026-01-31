@@ -1,0 +1,24 @@
+ol,ul{
+    background-color: orange;
+    width: 15%;
+    display: inline-block;
+    margin: 30px;
+    border: 1px solid red;
+    border-radius: 30px;
+    list-style-type: none;
+}
+li{
+    background-color: red;
+    color: orange;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+li::marker{
+    content: " 🚘";
+    color: white;
+}
+li:hover{
+    background-color: green;
+}

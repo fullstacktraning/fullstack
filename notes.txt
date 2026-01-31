@@ -169,4 +169,25 @@ forms
           onsubmit="" 
           onreset=""></form>
 
+Dimensions
+    1) rem (root em)
+        1rem = 16px
+    2) em
+    3) %
+    4) vw(viewport width) & vh (viewport height)
+    5) px (pixel)
+
+Ordered List
+
+1) type = "1" / "A" / "a" / "I" / "i" 
+
+2) start
+
+3) reversed
+
+Unordered List
+
+1) type = "disc" / "circle" / "square"
+    
+
 

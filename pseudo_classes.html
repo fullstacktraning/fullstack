@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo Classes - Example</title>
+    <style>
+        p:first-of-type{
+            color: red;
+        }
+        p:last-of-type{
+            color: green;
+        }
+        .c1:hover{
+            color: brown;
+        }
+        [class^="test"]:not(.test5){
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello,Welcome to FullStack</p>
+    <p class="c1">Hello,Welcome to FullStack</p>
+    <p>Hello,Welcome to FullStack</p>
+    <p>Hello,Welcome to FullStack</p>
+    <p>Hello,Welcome to FullStack</p>
+    <p>Hello,Welcome to FullStack</p>
+
+    <h1 class="test1">Hello</h1>
+    <h1 class="test2">Hello</h1>
+    <h1 class="test3">Hello</h1>
+    <h1 class="test4">Hello</h1>
+    <h1 class="test5">Hello</h1>
+</body>
+</html>
