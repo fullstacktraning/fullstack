@@ -8,7 +8,6 @@
 }
 .header{
     height: 15%;
-    border: 1px solid gray;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,4 +26,32 @@
 }
 .menu a:hover{
     color: orange;
+}
+
+.main{
+    height: 75%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.common{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 30px;
+}
+.common:hover{
+    border: 2px solid orange;
+}
+.common img{
+    width: 20vw;
+}
+.footer{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
 }
