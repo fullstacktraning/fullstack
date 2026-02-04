@@ -188,6 +188,31 @@ Ordered List
 Unordered List
 
 1) type = "disc" / "circle" / "square"
+
+
+Bucket Policy
+*************
+{
+    "Version": "2012-10-17",
+    "Id": "BucketPolicy",
+    "Statement": [
+        {
+            "Sid": "AllAccess",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::fullstack-7pm-online",
+                "arn:aws:s3:::fullstack-7pm-online/*"
+            ]
+        }
+    ]
+}
+
+
+Media Queries
+*************
+
     
 
 
