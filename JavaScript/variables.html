@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+    </head>
+    <body>
+        <script>
+            var num1 = 200;
+            var num2 = 100;
+            document.write("Addition :"+(num1+num2),"<br>");
+            document.write("Subtraction :"+(num1-num2),"<br>");
+            document.write("Multiplication :"+(num1*num2),"<br>");
+            document.write("Division :"+(num1/num2),"<br>");
+            var double = 100.12345;
+            document.write(double,"<br>");
+            var hexadecimal = 0x123ABC;
+            document.write(hexadecimal,"<br>");  //1194684
+            var octal = 0o123;
+            document.write(octal,"<br>");  //83
+            var binary = 0b10101;
+            document.write(binary,"<br>");  //21
+
+            var str1 = "FullStack";
+            var str2 = 'Backend';
+            var str3 = `${str1}...${str2}...DataBase`;   //Backtick.  //ES6.  //Template Literal. 
+            document.write(str3,`<br>`);  //FullStack...Backend...DataBase
+
+            var flag = true;
+            var flag1 = false;
+            flag ? document.write(str1,`<br>`):document.write(str2,`<br>`);
+            !flag ? document.write(str1,`<br>`):document.write(str2,`<br>`);
+            flag1 ? document.write(str1,`<br>`):document.write(str2,`<br>`);
+            !(flag1) ? document.write(str1,`<br>`):document.write(str2,`<br>`);
+
+            var x;
+            document.write(x,`<br>`);   //undefined
+            document.write(x+10,`<br>`); //NaN
+            document.write(x-10,`<br>`); //NaN
+
+            var y=null;   //empty / blank
+            document.write(y+10,`<br>`);   //10
+            document.write(y-10,`<br>`);   //-10
+
+            //bigint
+            var large = 123456789123456789123456789123456789123456789123456789123456789n;
+            document.write(large,`<br>`);
+
+            //Symbol. //101.  //102
+            var R101 = Symbol("Santosh");
+            var R102 = Symbol("Santosh");
+
+        </script>
+    </body>
+</html>
