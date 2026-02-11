@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <!--
+            Functions
+            *********
+                business logic called as Function
+                Functions are used to reuse the business logic
+                1) Function Declaration (Named Functions)
+                2) Function Expression (Anonymous Functions) (lexical scope)
+                3) Arrow Functions (ES6) => this short hand functions
+                4) CallBack Functions
+                5) Constructor Functions
+                6) Generator Functions
+                7) IIFE (Immidiate Invokable Functional Expression)
+                8) Higher Order Functions
+                9) Pure Functions
+        -->
+        <!--
+            add - two numbers
+            arrow functions
+            1) no parameters & no return type
+            2) no parameters & with return type
+            3) with parameters & no return type
+            4) with parameters & with return type
+        -->
+
+        <!-- <script>
+            /* lexical scope */
+            let obj = {
+                name : "JS !!!",
+                display : ()=>{
+                    document.write(this.name);
+                }
+            }
+            obj.display();
+        </script> -->
+
+        <!-- <script>
+            let square = num=>num*num;
+            let res = square(2);
+            document.write(res);
+        </script> -->
+
+
+        <!-- <script>
+            let test_func = ()=>100;
+            let res = test_func();
+            document.write(res);
+        </script> -->
+
+        
+        <!-- <script>
+            let db_func = (username,password)=>{
+                return username == "admin" && password == "admin@123" ?  "Login Success" : "Login Fail";
+            }
+            let res = db_func("admin","admin@123");
+            document.write(res);
+        </script> -->
+
+
+        <!-- <script>
+            let db_func = (username,password)=>{
+               username == "admin" && password == "admin@123" ? document.write("Login Success") : document.write("Login Fail"); 
+            }
+            db_func("admin","admin@123");
+        </script> -->
+
+
+        <!-- <script>
+            let db_func = ()=>{
+               return "DB Connection Soon...!"; 
+            }
+            let res = db_func();
+            document.write(res);
+        </script> -->
+        
+        
+        
+        
+        <!-- <script>
+            let test_func = ()=>{
+                document.write("welcome to arrow functions");
+            }
+            test_func();
+        </script> -->
+
+
+        <!-- <script>
+            let test_func = function(){
+                document.write("welcome to function expression");
+            }
+            test_func();
+        </script> -->
+        
+        
+        
+        <!-- <script>
+            test_func();
+            function test_func(){
+                document.write("welcome to function declaration");
+            }
+            
+        </script> -->
+        
+    </body>
+</html>

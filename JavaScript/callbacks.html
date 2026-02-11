@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CallBacks</title>
+    </head>
+    <body>
+
+        <script>
+            let addition = (num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num+5);
+                });
+            }
+            let subtraction = (num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num-3);
+                });
+            }
+            
+            let consume = async ()=>{
+                let addRes = await addition(5);
+                let subRes = await subtraction(addRes);
+                document.write(addRes,"<br>");
+                document.write(subRes);
+                
+            }
+            consume();
+        </script>
+
+
+
+
+        <!-- <script>
+            let promise1 = new Promise((resolve,reject)=>{
+                resolve("Server Call Success");
+            });
+            // promise1.then((posRes)=>{
+            //     document.write(posRes);
+            // },(errRes)=>{
+            //     document.write(errRes);
+            // });
+
+            let consume = async ()=>{
+                let res = await promise1;
+                document.write(res);
+            }
+            consume();
+
+        </script> -->
+
+
+
+
+
+        <!-- <script>
+            let addition = (num,callback)=>{
+                callback(num+5,false);
+            }
+            let subtraction = (num,callback)=>{
+                callback(num-3,false);
+            }
+            addition(5,(addRes,flag)=>{
+                if(!flag){
+                    subtraction(addRes,(subRes,flag)=>{
+                        if(!flag){
+                            document.write(subRes);
+                        }
+                    });
+                }
+            });
+            //addition - 10
+            //subtraction - 7
+            //multiplication - 14
+            //division - 7
+
+            //callback hell
+            //never recomended
+            //promises
+        </script> -->
+    </body>
+</html>
