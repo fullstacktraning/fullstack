@@ -2,10 +2,162 @@
 <html>
     <head>
         <title>CallBacks</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
 
+        <fieldset>
+            <legend>POSTEx</legend>
+            <input type="number" id="userId" placeholder="enter userId">
+            <br><br>
+            <input type="text" id="title" placeholder="enter title">
+            <br><br>
+            <input type="text" id="body" placeholder="enter body">
+            <br><br>
+            <button id="btn">ClickMe</button>
+        </fieldset>
         <script>
+            let btn = $("#btn");
+            btn.click(()=>{
+                $.ajax({
+                    url:"https://jsonplaceholder.typicode.com/posts",
+                    method:"POST",
+                    data:{
+                        userId:$("#userId").val(),
+                        title:$("#title").val(),
+                        body:$("#body").val()
+                    },
+                    headers:{
+                         "Content-Type": "application/json",
+                         "Authorization": "Bearer dummy_token_123"
+                    },
+                    success:(posRes)=>{
+                        console.log(posRes);
+                    },
+                    error:(errRes)=>{
+                        console.log(errRes);
+                    }
+                });
+            });
+        </script>
+
+
+
+        <!-- <script>
+            let make_async_call = ()=>{
+                $.ajax({
+                    url:"https://jsonplaceholder.typicode.com/posts",
+                    method:"GET",
+                    success:(posRes)=>{
+                        console.log(posRes);
+                        document.write(`<table border="1" align="center" cellpadding="10" cellspacing="10">
+                                            <tr>
+                                                <th>userId</th>
+                                                <th>id</th>
+                                                <th>title</th>
+                                                <th>body</th>
+                                            </tr>`);
+                        posRes.forEach((element,index)=>{
+                            document.write(`<tr>
+                                    <td>${element.userId}</td>
+                                    <td>${element.id}</td>
+                                    <td>${element.title}</td>
+                                    <td>${element.body}</td>
+                                </tr>`);
+                        });
+                    },
+                    error:(errRes)=>{
+                        console.log(errRes);
+
+                    }
+                });
+            }
+            make_async_call();
+        </script> -->
+
+
+
+
+
+        <!-- <script>
+            let make_api_call = ()=>{
+                $.ajax({
+                    url:"https://jsonplaceholder.typicode.com/users",
+                    method:"GET",
+                    success:(posRes)=>{
+                        console.log(posRes);
+                        document.write(`<table border="1" align="center" cellpadding="10" cellspacing="10">
+                                            <tr>
+                                                <th>id</th>
+                                                <th>name</th>
+                                                <th>username</th>
+                                                <th>email</th>
+                                            </tr>`);
+                        posRes.forEach((element,index)=>{
+                            document.write(`<tr>
+                                    <td>${element.id}</td>
+                                    <td>${element.name}</td>
+                                    <td>${element.username}</td>
+                                    <td>${element.email}</td>
+                                </tr>`);
+                        });
+                        
+                    },  
+                    error:(errRes)=>{
+                        console.log(errRes);
+                    }
+                })
+            }
+            make_api_call();
+        </script> -->
+
+
+
+
+
+        <!-- <script>
+            let promise1 = new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("Promise1")
+                },5000);
+            });
+            
+            let promise2 = new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    reject("Error");
+                },10000);
+            });
+
+            let promise3 = new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("Promise3")
+                },15000);
+            });
+            
+            // Promise.all([promise1,promise2,promise3]).then((posRes)=>{
+            //     console.log(posRes);
+            // },(errRes)=>{
+            //     console.log(errRes);
+            // });
+            
+            // Promise.race([promise1,promise2,promise3]).then((posRes)=>{
+            //     console.log(posRes);
+            // },(errRes)=>{
+            //     console.log(errRes);
+            // });
+
+            Promise.allSettled([promise1,promise2,promise3]).then((posRes)=>{
+                console.table(posRes);
+            },(errRes)=>{
+                console.log(posRes);
+            })
+        </script> -->
+
+
+
+
+
+        <!-- <script>
             let addition = (num)=>{
                 return new Promise((resolve,reject)=>{
                     resolve(num+5);
@@ -25,7 +177,7 @@
                 
             }
             consume();
-        </script>
+        </script> -->
 
 
 
