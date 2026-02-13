@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Constructor Functions</title>
+    </head>
+    <body>
+
+        <script>
+            function *func_one(){
+                yield 100;
+                yield *func_two();
+                yield 200;
+                return 400;
+                yield 500;
+            }
+            function *func_two(){
+                yield 300;
+            }
+            let cursor = func_one();
+            console.log(cursor.next());
+            console.log(cursor.next());
+            console.log(cursor.next());
+            console.log(cursor.next());
+            console.log(cursor.next());
+        </script>
+
+
+        <!-- <script>
+            function *func_one(){
+                yield 100;
+                yield 200;
+                yield 300;
+            }
+            let cursor = func_one();
+            console.log( cursor.next() );
+            console.log( cursor.next() );
+            console.log( cursor.next() );
+            console.log( cursor.next() );
+        </script> -->
+
+
+
+
+
+        <!-- <script>
+            for(var i=0;i<=5;i++){
+                ((i)=>{
+                    setTimeout(()=>{
+                        document.write(i,"<br>");
+                    },5000);
+                 })(i)
+            }
+        </script> -->
+
+
+
+        <!-- <script>
+            document.write( (num1=>Math.sqrt(num1))(2) );
+        </script> -->
+
+
+        <!-- <script>
+            let x = (()=>{
+                return 100;
+            })()
+            document.write(x);
+        </script> -->
+
+
+        <!-- <script>
+             (function(){
+                document.write("Welcome to IIFE !!!");
+             })()
+        </script> -->
+
+
+
+        <!-- <script>
+            function class_one(){
+
+            }
+            let obj = new class_one();
+            console.log( obj.__proto__ == class_one.prototype );
+        </script> -->
+
+
+
+        <!-- <script>
+            function class_one(){}
+            class_one.prototype.num1 = 200;
+
+            function class_two(){}
+            class_two.prototype = Object.create(class_one.prototype);
+            class_two.prototype.num2 = 100;
+
+            function class_three(){}
+            class_three.prototype = Object.create(class_two.prototype);
+            class_three.prototype.addition = function(){
+                let add = this.num1 + this.num2;
+                document.write(add);
+            }
+
+            let obj = new class_three();
+            obj.addition();
+        </script> -->
+
+
+
+
+       
+        <!-- <script>
+            function class_one(){
+                this.add1 = function(){
+                    let num1 = 200;
+                    let num2 = 100;
+                    let add = num1 + num2;
+                    document.write(add);
+                }
+                this.add2 = function(){
+                    let num1 = 200;
+                    let num2 = 100;
+                    let add = num1 + num2;
+                    return add;
+                }
+                this.add3 = function(num1,num2){
+                    let add = num1 + num2;
+                    document.write(add);
+                }
+                this.add4 = function(num1,num2){
+                    let add = num1 + num2;
+                    return add;
+                }
+            }
+            let obj1 = new class_one();
+            obj1.add1();
+            let res = obj1.add2();
+            document.write(res);
+            obj1.add3(200,100);
+            let res1 = obj1.add4(200,100);
+            document.write(res1);
+        </script> -->
+
+
+
+        <!-- <script>
+            function class_one(){
+                this.num1 = 200;
+                this.num2 = 100;
+            }
+            let obj = new class_one();
+            let x = obj.num1;
+            let y = obj.num2;
+            let add = x + y;
+            document.write(add);
+        </script> -->
+    </body>
+</html>
