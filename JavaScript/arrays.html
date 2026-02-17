@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays Manipulations</title>
+    </head>
+    <body>
+
+        <!-- <script>
+            let arr1 = [10,50,20,40,30];
+            let res = arr1.sort((num1,num2)=>{
+                return num2-num1;
+            });
+            console.log(res);   //[10, 20, 30, 40, 50]
+        </script> -->
+
+
+
+        <!-- <script>
+            let arr1 = [100,200,300,400,500];
+            let res1 = arr1.every((element,index)=>{
+                return element<500;
+            })
+            console.log(res1);
+        </script> -->
+
+
+
+        <!-- <script>
+            let arr1 = [100,200,300,400,500];
+            let res1 = arr1.some((element,index)=>{
+                return element>500;
+            })
+            console.log(res1);
+        </script> -->
+
+
+
+        <!-- <script>
+            let arr1 = [10,20,30,40,50];
+            let res1 = arr1.includes(30);
+            console.log(res1);
+            let res2 = arr1.includes(300);
+            console.log(res2);
+
+            let e1 = arr1.find((element,index)=>{
+                return element == 10;
+            });
+            console.log(e1);
+
+            let e2 = arr1.find((element,index)=>{
+                return element == 100;
+            });
+            console.log(e2);
+        </script> -->
+
+
+
+
+
+        <!-- <script>
+            let arr1 = [20,30,40];
+            
+            arr1.push(50);
+            console.log(arr1);  //[20, 30, 40, 50]
+
+            arr1.unshift(10);
+            console.log(arr1);      //[10, 20, 30, 40, 50]
+
+            arr1.pop();
+            console.log(arr1);      //[10, 20, 30, 40]
+
+            arr1.shift();
+            console.log(arr1);      //[20, 30, 40]
+        </script> -->
+
+
+
+        <!-- <script>
+            let arr1 = [10,20,30,40,50,60,70,80,90,100];
+            let res1 = arr1.slice(4,7);
+            console.log(res1);
+            console.log(arr1);
+
+            let res2 = arr1.slice(0,1);
+            console.log(res2);  //[10]
+
+            let res3 = arr1.slice(9);
+            console.log(res3);
+
+            let s1 = arr1.slice(5)
+            let s2 = arr1.slice(0,5); 
+            let new_arr = [...s1,...s2];
+            console.log(new_arr);   //[60, 70, 80, 90, 100, 10, 20, 30, 40, 50]   
+            
+            let new_arr1 = s1.concat(s2);
+            console.log(new_arr1);
+        </script> -->
+
+
+
+        <!-- <script>
+            let arr1 = [100,200,300,400,500];
+            arr1.splice(arr1.findIndex((element,index)=>{
+                return element == 300;
+            }),1);
+            console.log(arr1);
+
+            arr1.splice(arr1.findIndex((element,index)=>{
+                return element == 500
+            }),1);
+            console.log(arr1);
+        </script> -->
+
+
+        <!-- <script>
+            let arr1 = [10,20,30,40,50];
+            let i1 = arr1.findIndex((element,index)=>{
+                return element == 10;
+            });
+            console.log(i1);
+
+            let i2 = arr1.findIndex((element,index)=>{
+                return element == 50;
+            });
+            console.log(i2);
+
+            let i3 = arr1.findIndex((element,index)=>{
+                return element == 100;
+            });
+            console.log(i3);
+        </script> -->
+
+
+
+
+
+        <!-- <script>
+            let arr1 = [10,20,30,40,50,60,70,80,90,100];
+            arr1.splice(4,3);
+            console.log(arr1);      //[10, 20, 30, 40, 80, 90, 100]
+            arr1.splice(6,1);
+            console.log(arr1);      //[10, 20, 30, 40, 80, 90]
+            arr1.splice(0,1);
+            console.log(arr1);      //[20, 30, 40, 80, 90]
+            arr1.splice(1,1);
+            console.log(arr1);      //[20, 40, 80, 90]
+            arr1.splice(0,1,10,20,30);
+            console.log(arr1);      //[10, 20, 30, 40, 80, 90]
+            arr1.splice(4,0,50,60,70);
+            console.log(arr1);      //[10, 20, 30, 40, 50, 60, 70, 80, 90]
+            arr1.splice(8,1,90,100);
+            console.log(arr1);      //[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        </script> -->
+
+
+
+        <!-- <script>
+            let arr1 = [1,2,3,4,5];
+            let res = arr1.reduce((accumulator,nextElement)=>{
+                return accumulator + nextElement;
+            });
+            console.log(res);
+        </script> -->
+
+
+
+        <!-- <script>
+            let arr1 = [100,200,300,400,500];
+            let new_arr = arr1.filter((element,index)=>{
+                return element>=300;
+            });
+            console.log(new_arr);
+        </script> -->
+
+
+
+        <!-- <script>
+            let arr1 = [1,2,3,4,5];
+            let new_arr = arr1.map((element,index)=>{
+                return element*100;
+            });
+            console.log(new_arr);
+        </script> -->
+    </body>
+</html>
