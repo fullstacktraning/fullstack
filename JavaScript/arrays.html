@@ -5,6 +5,87 @@
     </head>
     <body>
 
+        <script>
+            let arr1 = [10,20,30,40,10,20,50,20,10,60];
+            let new_arr = arr1.filter((element,index)=>{
+                return arr1.indexOf(element) == index;
+            })
+            console.log(new_arr);
+        </script>
+
+
+        <!-- <script>
+            let arr1 = ["Frontend","to","welcome"];
+            let res = arr1.reduceRight((accumulator,nextElement)=>{
+                return accumulator+" "+nextElement;
+            });
+            console.log(res);
+        </script> -->
+
+
+        <!-- <script>
+            let str = "hello";
+            console.log(str.repeat(10));
+        </script> -->
+
+
+
+        <!-- <script>
+            let str = "welcome to frontend";
+            console.log(str.substr(0,7));
+            console.log(str.substr(8,2));
+            console.log(str.substr(11));
+
+            let arr = str.split(" ");
+            console.log(arr[0]);
+            console.log(arr[1]);
+            console.log(arr[2]);
+
+            console.log( str.substring(0,7) );  
+            console.log( str.substring(8,10) );      
+            console.log( str.substring(11) );    
+        </script> -->
+
+
+
+        <!-- <script>
+            let str = "Frontend";
+            console.log( str.padStart(12,"*").padEnd(16,"*") );
+        </script> -->
+
+
+
+        <!-- <script>
+            let str = " welcome ";
+            console.log( str.length );
+            console.log( str.trimStart().length );
+            console.log( str.trimEnd().length );
+            console.log( str.trim().length );
+        </script> -->
+
+
+        <!-- <script>
+            let str = "welc*#ome"
+            console.log( Array.from(str).toString().replace(/[*#,]/g,"") );
+        </script> -->
+
+
+        <!-- <script>
+            console.log( Array.from("hello").reverse().toString().replace(",","") );
+            console.log( Array.from("welcome").reverse().toString().replace(/,/g,"") );
+            console.log( Array.from("JavaScript").reverse().toString().replaceAll(",","") );
+            console.log( "HTML".split("").reverse().join("") );
+        </script> -->
+
+
+
+        <!-- <script>
+            let arr1 = [10,20,30,40,50];
+            let new_arr = arr1.reverse();
+            console.log(new_arr);
+        </script> -->
+
+
         <!-- <script>
             let arr1 = [10,50,20,40,30];
             let res = arr1.sort((num1,num2)=>{
