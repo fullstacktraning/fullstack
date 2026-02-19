@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM MANIPULATIONS</title>
+        <style>
+            .success{
+                color: green;
+            }
+            .error{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="my_div">
+
+        </div>
+        <script>
+            let div = document.getElementById("my_div");
+            let h1 = document.createElement("h1");
+            h1.innerHTML = "hello";
+            div.appendChild(h1);  
+            
+            let h2 = document.createElement("h2");
+            h2.innerHTML="welcome";
+            div.insertBefore(h2,h1);
+
+            let p = document.createElement("p");
+            p.innerHTML = "my_paragraph";
+            div.replaceChild(p,h2);
+
+            let xerox_p = p.cloneNode(true);
+            div.appendChild(xerox_p);
+
+            div.removeChild(h1);
+        </script>
+
+
+
+
+
+        <!-- <p>Hello</p>
+        <script>
+            let p = document.querySelector("p");
+            p.setAttribute("class","success");
+            console.log(p.getAttribute("class"));
+            console.log(p.hasAttribute("class"));
+            p.removeAttribute("class");
+        </script> -->
+
+
+
+        <!-- <input type="text" id="uname" placeholder="enter user name">
+        <br><br>
+        <input type="password" id="upwd" placeholder="enter password">
+        <br><br>
+        <button onclick="login()">Login</button>
+        <br><br>
+        <h1 id="res"></h1>
+        <script>
+            let login = ()=>{
+                let uname = document.getElementById("uname").value;
+                let upwd = document.getElementById("upwd").value;
+                let h1 = document.getElementById("res");
+                if(uname == "admin" && upwd == "admin@123"){
+                    h1.innerHTML = "Login Success";
+                    // if(h1.classList.contains("error")){
+                    //     h1.classList.remove("error");
+                    // }
+                    h1.classList.add("success");
+                }else{
+                    h1.innerHTML = "Login Fail";
+                    // if(h1.classList.contains("success")){
+                    //     h1.classList.remove("success");
+                    // }
+                    h1.classList.add("error");
+                }
+            }
+        </script> -->
+
+
+        <!-- <p></p>
+        <p></p>
+        <p></p>
+        <h6 id="my_h6"></h6>
+        <h6 id="my_h6"></h6>
+        <h6 id="my_h6"></h6>
+        <span class="my_span"></span>
+        <span class="my_span"></span>
+        <span class="my_span"></span>
+        <script>
+
+            // let all_span = document.querySelectorAll(".my_span");
+            // for(let span of all_span){
+            //     span.innerHTML = "hello";
+            // }
+
+
+            // let all_h6 = document.querySelectorAll("#my_h6");
+            // for(let h6 of all_h6){
+            //     h6.innerHTML = "hello";
+            // }
+
+
+            // let all_p = document.querySelectorAll("p");
+            // for(let p of all_p){
+            //     p.innerHTML = "Hello";
+            // }
+
+
+        //     let first_p = document.querySelector("p");
+        //     first_p.innerHTML = "hello";
+
+        //    let first_h6 = document.querySelector("#my_h6"); 
+        //    first_h6.innerHTML = "Hello";
+
+        //    let first_span = document.querySelector(".my_span");
+        //    first_span.innerHTML = "Hello";
+        </script> -->
+
+
+
+
+        <!-- <h1 class="c1"></h1>
+        <h1 class="c1"></h1>
+        <h1 class="c1"></h1>
+        <script>
+            let all_h1 = document.getElementsByClassName("c1");
+            // all_h1[0].innerHTML = "hello";
+            // all_h1[1].innerHTML = "welcome";
+            // all_h1[2].innerHTML = "frontend";
+            for(let h1 of all_h1){
+                h1.innerHTML = "hello";
+            }
+        </script> -->
+
+
+
+        <!-- <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <script>
+            let all_p = document.getElementsByTagName("p");
+            // all_p[0].innerHTML = "Hello";
+            // all_p[1].innerHTML = "Welcome";
+            // all_p[2].innerHTML = "Frontend";
+            // all_p[3].innerHTML = "Backend";
+            // all_p[4].innerHTML = "Cloud";
+
+            for(let p of all_p){
+                p.innerHTML = "Hello";
+            }
+        </script> -->
+
+
+
+
+        <!-- <input type="text" id="uname" placeholder="enter user name">
+        <button onclick="test_func()">ClickMe</button>
+        <script>
+            let test_func = ()=>{
+                document.getElementById("uname").value = "Hello";
+            }  
+        </script> -->
+
+
+
+
+        <!-- <input type="text" id="uname" placeholder="enter username">
+        <button onclick="test_func()">ClickMe</button>
+        <script>
+            let test_func = ()=>{
+                let res = document.getElementById("uname").value;
+                console.log(res);
+            }
+        </script> -->
+
+        <!-- <p id="my_p1"></p>
+        <script>
+            let p = document.getElementById("my_p1");
+            //p.innerHTML = "<i>Hello</i>";
+            p.innerText = "<i>Hello</i>";
+        </script> -->
+    </body>
+</html>
