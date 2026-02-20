@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Closures - Example</title>
+    </head>
+    <body>
+
+        <script>
+            //Currying - Modularity - Readability
+            // let test_func = (param1,param2,param3)=>{
+            //     document.write(param1 + param2 + param3);
+            // }
+            // test_func(100,200,300);
+
+            let test_func = (param1)=>{
+                return (param2)=>{
+                    return (param3)=>{
+                        document.write(param1 + param2 + param3);
+                    }
+                }
+            }
+            test_func(100)(200)(300);
+        </script>
+
+
+
+        <!-- <script>
+            function test_func(param1,param2,param3){
+                console.log(this.num + param1 + param2 + param3);
+            }
+            let obj = {
+                num : 100
+            };
+            //test_func.call(obj,200,300,400);
+            //let arr1 = [200,300,400];
+            //test_func.apply(obj,arr1);
+
+            let new_func = test_func.bind(obj);
+            new_func(200,300,400);
+        </script> -->
+
+
+
+        <!-- <script>
+            let outer = ()=>{
+                let x = 100;
+                return ()=>{
+                    console.log(x);
+                }
+            }
+            console.dir(outer())
+        </script> -->
+    </body>
+</html>

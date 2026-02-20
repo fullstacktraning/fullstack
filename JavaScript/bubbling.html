@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Bubbling & Event Capturing</title>
+        <style>
+            .parent{
+                width: 300px;
+                height: 300px;
+                border: 1px solid green;
+                background-color: green;
+                text-align: center;
+                color: white;
+            }
+            .child{
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+                color: red;
+                margin: 50px;
+            }
+            .subchild{
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+                margin: 50px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            parent
+            <div class="child">
+                child
+                <div class="subchild">
+                    subchild
+                </div>
+            </div>
+        </div>
+        <!-- <script>
+            let parent = document.querySelector(".parent");
+            parent.addEventListener("click",()=>{
+                console.log("parent");
+            });
+
+            let child = document.querySelector(".child");
+            child.addEventListener("click",(event)=>{
+                event.stopPropagation();
+                console.log("child");
+            });
+
+            let subchild = document.querySelector(".subchild");
+            subchild.addEventListener("click",()=>{
+                console.log("subchild");
+            });
+        </script> -->
+
+        <script>
+            let parent = document.querySelector(".parent");
+            parent.addEventListener("click",()=>{
+                console.log("parent");
+            },true);
+
+            let child = document.querySelector(".child");
+            child.addEventListener("click",(event)=>{
+                console.log("child");
+            },true);
+
+            let subchild = document.querySelector(".subchild");
+            subchild.addEventListener("click",()=>{
+                console.log("subchild");
+            },true);
+        </script>
+    </body>
+</html>
