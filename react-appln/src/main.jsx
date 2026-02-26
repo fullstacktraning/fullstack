@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import Comp1 from './components/Comp1.jsx'
 import Comp3 from './components/Comp3.jsx'
+import State from './components/State.jsx'
 createRoot(document.getElementById('root')).render(
-   <Comp3></Comp3>,
+   <State></State>,
 )
