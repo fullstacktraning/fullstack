@@ -1,20 +1,13 @@
-
 import { useState } from "react";
 import Comp1 from "./Comp1";
 import Comp2 from "./Comp2";
-
 const State = ()=>{
     const [msg,setMsg] = useState(`Hello`);
-    
     const [num1,setNum1] = useState(200);
     const [num2,setNum2] = useState(100);
-
     const [flag,setFlag] = useState(true);
-
     const [nums,setNums] = useState([100,200,300,400,500]);
-
     const [obj,setObj] = useState({frontend:`React`,backend:`Boot`,database:`MongoDB`});
-
     const [laptops,setLaptops] = useState([{"pid":111,"pname":"Hp","pcost":10000,"pimg":"https://mern-stack-appln.s3.eu-north-1.amazonaws.com/laptops/hp.png"},
                                             {"pid":222,"pname":"Asus","pcost":20000,"pimg":"https://mern-stack-appln.s3.eu-north-1.amazonaws.com/laptops/asus.png"}]);
 
