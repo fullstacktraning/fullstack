@@ -10,7 +10,6 @@ const State = ()=>{
     const [obj,setObj] = useState({frontend:`React`,backend:`Boot`,database:`MongoDB`});
     const [laptops,setLaptops] = useState([{"pid":111,"pname":"Hp","pcost":10000,"pimg":"https://mern-stack-appln.s3.eu-north-1.amazonaws.com/laptops/hp.png"},
                                             {"pid":222,"pname":"Asus","pcost":20000,"pimg":"https://mern-stack-appln.s3.eu-north-1.amazonaws.com/laptops/asus.png"}]);
-
     return(
         <>
             <table border={1}
