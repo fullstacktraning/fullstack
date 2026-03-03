@@ -10,6 +10,7 @@ import Parent2 from './components/Parent2.jsx'
 import Parent3 from './components/Parent3.jsx'
 import Parent4 from './components/Parent4.jsx'
 import Master from './components/Master.jsx'
+import Main from './components/Main.jsx'
 createRoot(document.getElementById('root')).render(
-   <Master></Master>,
+   <Main></Main>,
 )

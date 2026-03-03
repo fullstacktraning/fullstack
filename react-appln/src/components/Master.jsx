@@ -6,14 +6,16 @@ const Master = ()=>{
     return(
         <>
             <BrowserRouter>
-                <Link to="/laptops" style={{marginRight:200}}>
+                <Link to="/laptops/111/pone/10000" style={{marginRight:200}}>
                     Laptops
                 </Link>
 
+
+
                 <Routes>
                    
-                    <Route path="/laptops" element={<Laptops></Laptops>}>
-                        <Route path="laptops/dell" element={<Dell></Dell>}></Route>
+                    <Route path="/laptops/:pid/:pname/:pcost" element={<Laptops></Laptops>}>
+                        <Route path="laptops/dell/:processor/:harddisk/:generation" element={<Dell></Dell>}></Route>
                         <Route path="laptops/hp" element={<Hp></Hp>}></Route>
                     </Route>
 
