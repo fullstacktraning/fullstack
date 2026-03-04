@@ -1,0 +1,11 @@
+1) https://dummyjson.com/products
+2) https://jsonplaceholder.typicode.com/posts
+
+
+1) https://httpbin.org/get
+"Authorization":"Bearer test123",
+"Custom-Header":"ReactAxiosTest"
+
+2) https://postman-echo.com/get
+"API-Key": "123456",
+"Custom-User": "student"

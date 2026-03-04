@@ -11,6 +11,8 @@ import Parent3 from './components/Parent3.jsx'
 import Parent4 from './components/Parent4.jsx'
 import Master from './components/Master.jsx'
 import Main from './components/Main.jsx'
+import GetEx1 from './components/GetEx1.jsx'
+import GetEx2 from './components/GetEx2.jsx'
 createRoot(document.getElementById('root')).render(
-   <Main></Main>,
+   <GetEx2></GetEx2>,
 )
