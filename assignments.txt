@@ -9,3 +9,68 @@
 2) https://postman-echo.com/get
 "API-Key": "123456",
 "Custom-User": "student"
+
+
+1) https://reqres.in/api/users
+    {
+        name: "XXXXX",
+        job: "XXXXX"
+    }
+
+2) https://dummyjson.com/posts/add
+    {
+        title: "Learning Axios",
+        userId: 5
+    }
+
+
+1) https://reqres.in/api/login
+    {
+        email: "eve.holt@reqres.in",
+        password: "cityslicka"
+    }
+
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer test_token"
+    }
+
+2) https://dummyjson.com/posts/add
+        {
+            title: "Axios API Key Example",
+            userId: 10
+        }
+        headers: {
+            "Content-Type": "application/json",
+            "x-api-key": "dummyapikey123"
+        }
+
+
+PUT
+***
+1) https://jsonplaceholder.typicode.com/posts/1
+        {
+            title: "Axios PUT Example",
+            body: "Updating data",
+            userId: 10
+        }
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer dummy_token_123"
+        }
+
+
+2) https://dummyjson.com/posts/1
+        {
+            title: "Updated Post",
+            userId: 5
+        }
+        headers:{
+            "Content-Type":"application/json"
+        }
+
+DELETE
+******
+    https://jsonplaceholder.typicode.com/posts/1
+
+

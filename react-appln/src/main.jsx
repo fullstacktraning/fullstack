@@ -13,6 +13,9 @@ import Master from './components/Master.jsx'
 import Main from './components/Main.jsx'
 import GetEx1 from './components/GetEx1.jsx'
 import GetEx2 from './components/GetEx2.jsx'
+import PostEx1 from './components/PostEx1.jsx'
+import PostEx2 from './components/PostEx2.jsx'
+import PutEx1 from './components/PutEx1.jsx'
 createRoot(document.getElementById('root')).render(
-   <GetEx2></GetEx2>,
+   <PutEx1></PutEx1>,
 )
