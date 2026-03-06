@@ -16,6 +16,8 @@ import GetEx2 from './components/GetEx2.jsx'
 import PostEx1 from './components/PostEx1.jsx'
 import PostEx2 from './components/PostEx2.jsx'
 import PutEx1 from './components/PutEx1.jsx'
+import External from './components/External.jsx'
+import Events from './components/Events.jsx'
 createRoot(document.getElementById('root')).render(
-   <PutEx1></PutEx1>,
+   <Events></Events>,
 )
