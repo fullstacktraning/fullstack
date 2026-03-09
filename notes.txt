@@ -1,0 +1,40 @@
+Props Drilling
+**************
+    sharing data from "source component" to "destination component" through several "interdependent components" called as
+props drilling
+    we will overcome props drilling with the help of state management
+    we will implement state management in two ways
+    1) context api
+    2) redux
+
+context api
+***********
+    vendor
+    bundle size never increases
+    static data
+    small scale web applications
+
+    debugging difficult
+    medium&large (not)
+    dynamic data (not)
+
+1) context
+2) provider (store)
+3) consumer
+
+
+Hooks
+*****
+    createContext()
+    
+    useContext()
+
+
+Redux
+*****
+    - State management
+    - 3rd party
+    - build size increases
+    - dynamic data
+    - medium & large scale web applications
+
