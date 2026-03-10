@@ -38,3 +38,6 @@ Redux
     - dynamic data
     - medium & large scale web applications
 
+                                 main.jsx
+api --> slice (reducer) --> store ---> App
+
