@@ -19,6 +19,12 @@ import PutEx1 from './components/PutEx1.jsx'
 import External from './components/External.jsx'
 import Events from './components/Events.jsx'
 import Comp11 from './components/Comp11.jsx'
+import TestParent from './components/TestParent.jsx'
+import CustomHook from './components/CustomHook.jsx'
+import BootStrap from './components/BootStrap.jsx'
+import FinalComp from './components/FinalComp.jsx'
+import ControlledComp from './components/ControlledComp.jsx'
+import UnControlled from "./components/UnControlled.jsx"
 createRoot(document.getElementById('root')).render(
-   <Comp11></Comp11>,
+   <UnControlled></UnControlled>,
 )

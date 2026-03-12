@@ -41,3 +41,31 @@ Redux
                                  main.jsx
 api --> slice (reducer) --> store ---> App
 
+
+Deployment
+**********
+1) GitHub
+
+2) GitHub Hooks
+
+3) Jenkins (Pipeline)
+
+4) Docker
+
+5) EC2
+
+Developer --> GitHub --> GitHub Hooks ---> Jenkins
+
+1) Clone the code
+
+2) Docker Image
+
+3) Push to Container
+
+4) EC2
+
+5) public IP
+
+Step 1.
+    create EC2 instance
+
